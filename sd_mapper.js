@@ -20,9 +20,9 @@ document.getElementById("timeStamp").innerHTML = timeStr;
 var thisHour = thisTime.getHours();
 // you would do the same for the months too,your getting the month number from the thisTime variable.
 var thisMonth = thisTime.getMonth();
-
+// 
 var mapNum = (2 * thisMonth + thisHour) % 24;
-
+// 
 var imgStr = "<img src='sd_sky" + mapNum + ".png' />";
-
+// 
 document.getElementById("planisphere").insertAdjacentHTML("afterBegin", imgStr);
